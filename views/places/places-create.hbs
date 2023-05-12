@@ -1,0 +1,36 @@
+<div class="container">
+
+    <h1>Crear nuevo places</h1>
+
+    <hr>
+
+    <form method="POST" action="/places/crear">
+
+        <label>Nombre
+            <input name="name" type="text">
+        </label>
+        <br><br>
+
+        <label>Type
+            <select class="form-select" aria-label="Default select example" name="type">
+                <option value="coffee shop">coffee shop</option>
+                <option value="bookstore">bookstore</option>
+            </select>
+        </label>
+        <br><br>
+
+        <label>Latitud
+            <input name="latitude" type="text">
+        </label>
+        <br><br>
+
+        <label>Longitud
+            <input name="longitude" type="text">
+        </label>
+        <br><br>
+
+        <input type="submit" value="Crear places">
+
+    </form>
+
+</div>

@@ -1,0 +1,37 @@
+<div class="container">
+
+    <h1>Crear nuevo places</h1>
+
+    <hr>
+
+    <form method="POST" action="/places/edit/{{id}}">
+
+        <label>Nombre
+            <input name="name" type="text" value="{{name}}">
+        </label>
+        <br><br>
+
+        <label>Type
+            <select class="form-select" aria-label="Default select example" name="type" value="{{type}}">
+                <option value="coffee shop">coffee shop</option>
+                <option value="bookstore">bookstore</option>
+            </select>
+        </label>
+        <br><br>
+
+        <label>Latitud
+            <input name="latitude" type="text" value="{{location.coordinates.[0]}}">
+        </label>
+        <br><br>
+
+        <label>Longitud
+            <input name="longitude" type="text" value="{{location.coordinates.[1]}}">
+        </label>
+        <br><br>
+
+        <input type="submit" value="Edit places">
+
+    </form>
+
+
+</div>
